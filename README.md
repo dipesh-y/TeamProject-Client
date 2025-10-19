@@ -38,8 +38,8 @@ Frontend covers **Tutorials 1–19** from the YouTube playlist:
 ## 👥 Frontend Team
 
 | Name | Role |
-| Dipesh Yadav | Team Leader / Reviewer |
 |------|------|
+| Dipesh Yadav | Team Leader / Reviewer |
 | Kiran Verma | Developer |
 | Vibha | Developer |
 | Ariga | Developer |
@@ -67,7 +67,7 @@ Frontend covers **Tutorials 1–19** from the YouTube playlist:
     ```
     npm run dev
 
-1. **The app will start at:*
+1. **The app will start at:**
    ```bash
     http://localhost:5173
 
