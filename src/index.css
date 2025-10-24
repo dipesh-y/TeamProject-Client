@@ -1,5 +1,24 @@
 @import "tailwindcss";
-.container{
-    width: 95%; 
-    margin: auto;
+
+@theme {
+  --color-primary: #ff5252;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* HEADER */
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+.link:hover {
+  color: #ff5252;
+}
+
+.MuiBadge-badge {
+  background-color: #ff5252 !important;
 }
