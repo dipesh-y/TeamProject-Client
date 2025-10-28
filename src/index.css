@@ -7,6 +7,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
+  background: #f5f0f0;
 }
 
 /* HEADER */
@@ -22,3 +23,6 @@ body {
 .MuiBadge-badge {
   background-color: #ff5252 !important;
 }
+nav ul button{text-transform: capitalize !important;}
+
+nav ul button:hover {background: rgba(0,0,0,0,1) !important}
