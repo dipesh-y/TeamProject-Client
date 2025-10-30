@@ -7,7 +7,9 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  background: #f5f0f0;
+  background: #f6f0f0;
+  overflow-x: hidden;
+
 }
 
 /* HEADER */
@@ -26,3 +28,57 @@ body {
 nav ul button{text-transform: capitalize !important;}
 
 nav ul button:hover {background: rgba(0,0,0,0,1) !important}
+
+.sliderHome{
+    overflow: inherit !important;
+}
+
+/* Button size & background */
+.swiper-button-prev, .swiper-button-next {
+  width: 45px !important;
+  height: 45px !important;
+  background: #fff !important;
+  border-radius: 50% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 3px #0000003d !important;
+}
+
+
+/* ❗❗❗Changed AFTER -> svg because newer swiper uses svg icons*/
+/* Arrow icon color and size */
+.swiper-button-prev svg,
+.swiper-button-next svg {
+  width: 22px !important;
+  height: 22px !important;
+  stroke: #000 !important;  /* icon color */
+}
+
+.homeCatSlider{
+  overflow: inherit !important;
+}
+.homeCatSlider .swiper {
+  overflow: visible !important;
+}
+.homeCatSlider .swiper-button-prev, 
+.homeCatSlider .swiper-button-next {
+  width:30px !important;
+  height: 30px !important;
+  min-width: 30px !important;
+}
+
+.homeCatSlider .swiper-button-prev::after,
+.homeCatSlider .swiper-button-next::after {
+  font-size: 16px !important;
+}
+
+
+.homeCatSlider .swiper-button-prev{left:-10px !important}
+.homeCatSlider .swiper-button-next{right:-10px !important}
+
+.homeCatSlider .item{border: 1px solid rgba(0,0,0,0,1);}
+
+.homeCatSlider .swiper-button-prev:hover , .homeCatSlider .swiper-button-next:hover{background-color: #ff5252 !important;}
+.homeCatSlider .swiper-button-prev:hover::after , .homeCatSlider .swiper-button-next:hover::after{color: #fff !important;}
+.homeCatSlider .item:hover img{transform: scale(1.1);}
