@@ -11,7 +11,17 @@ body {
   overflow-x: hidden;
 
 }
-
+ ::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+ }
+  ::-webkit-scrollbar-thumb {
+  background: #ff5252 !important;
+  }
+  ::-webkit-scrollbar-track {
+  background: #fff !important;
+  }
+  
 /* HEADER */
 .container {
   width: 95%;
@@ -38,13 +48,31 @@ nav ul button:hover {background: rgba(0,0,0,0,1) !important}
   width: 45px !important;
   height: 45px !important;
   background: #fff !important;
-  border-radius: 50% !important;
+  border-radius: 100% !important;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 1px 3px #0000003d !important;
+  box-shadow: 0 1px 3px #0000001f !important;
+  min-width: 45px;
+  transition: all 0.2s;
 }
 
+.swiper-button-prev:after, .swiper-button-next:after {
+  font-size: 22px !important;
+  color: #000;  
+}
+
+.smlBtn .swiper-button-prev, .smlBtn .swiper-button-next {
+  width: 30px !important;
+  height: 30px !important;
+  min-width: 30px !important;
+  top: 55% !important;
+}
+
+.smlBtn .swiper-button-prev:after, .smlBtn .swiper-button-next:after {
+  font-size: 18px !important;
+  color: #000;
+}
 
 /* ❗❗❗Changed AFTER -> svg because newer swiper uses svg icons*/
 /* Arrow icon color and size */
@@ -52,8 +80,16 @@ nav ul button:hover {background: rgba(0,0,0,0,1) !important}
 .swiper-button-next svg {
   width: 22px !important;
   height: 22px !important;
-  stroke: #000 !important;  /* icon color */
+  stroke: #000;  /* icon color */
 }
+
+.swiper-button-next svg {
+  width: 22px !important;
+  height: 22px !important;
+  stroke: #000;  /* icon color */
+}
+
+
 
 .homeCatSlider{
   overflow: inherit !important;
@@ -82,3 +118,17 @@ nav ul button:hover {background: rgba(0,0,0,0,1) !important}
 .homeCatSlider .swiper-button-prev:hover , .homeCatSlider .swiper-button-next:hover{background-color: #ff5252 !important;}
 .homeCatSlider .swiper-button-prev:hover::after , .homeCatSlider .swiper-button-next:hover::after{color: #fff !important;}
 .homeCatSlider .item:hover img{transform: scale(1.1);}
+
+.MuiTabs-indicator {
+  background-color: #ff5252 !important;
+}
+
+.MuiTab-textColorPrimary.Mui-selected {
+  color: #ff5252 !important;
+}
+
+.productsSlider .swiper-wrapper {
+  padding-bottom: 30px;
+  margin-right: -15px;
+  margin-right: -15px;
+}
