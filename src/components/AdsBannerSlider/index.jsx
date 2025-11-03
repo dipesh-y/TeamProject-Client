@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Link } from "react-router-dom";
 import { Navigation } from 'swiper/modules';
-import BannerBox from '../bannerBox';
+import BannerBox from '../BannerBox';
 
 const AdsBannerSlider = (props) => {
     return (
