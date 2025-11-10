@@ -27,7 +27,7 @@ const Home = () => {
     <>
       <HomeSlider />
 
-      <section className="py-6 h-[500px] bg-white">
+      <section className="py-6  h-[500px] bg-white">
         <div className=" container flex items-center gap-4 ">
           <div className="part1 w-[70%]">
             <HomeBannerV2/>
