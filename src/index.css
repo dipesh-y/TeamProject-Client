@@ -1,6 +1,12 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+
+
+/* Updated Tailwind CSS directives for v4 compatibility */
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
 
 /* Theme variable */
 @theme {
@@ -43,6 +49,7 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
+.btn-org:hover{background-color: #282828 !important;}
 
 .link:hover {
   color: #ff5252;
@@ -202,4 +209,18 @@ footer form input::placeholder {
 .homeSliderV2 .info h2{transition-duration: 1.6s ;}
 .homeSliderV2 .info h3{transition-duration: 1.9s ;}
 .homeSliderV2 .info .btn_{transition-duration:2.2s ;}
+
+.MuiCheckbox-root{padding: 6px !important}
+
+.ReactCollapse--collapse{
+  transition: height 500ms;
+}
+.itemViewActions button.active svg{
+  color: #ff5252 !important;
+  opacity: 1;
+
+}
+
+.Mui-selected.MuiPaginationItem-page{background: #ff5252 !important; color: #fff !important;}
+
 

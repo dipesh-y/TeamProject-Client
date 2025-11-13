@@ -1,5 +1,5 @@
 import React from 'react'
-import "../bannerBoxV2/style.css"
+import "./style.css"
 import { Link } from 'react-router-dom'
 
  const BannerBoxV2= (props) => {

@@ -3,8 +3,9 @@ import HomeSlider from "../../components/HomeSlider";
 import HomeCatSlider from "../../components/HomeCatSlider";
 import { LiaShippingFastSolid } from "react-icons/lia";
 import AdsBannerSlider from "../../components/AdsBannerSlider";
+import AdsBannerSliderV2 from "../../components/AdsBannerSliderV2";
 import BlogItem from "../../components/BlogItem";
-import Footer from "../../components/Footer";
+
 
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -28,7 +29,7 @@ const Home = () => {
       <HomeSlider />
 
       <section className="py-6  h-[500px] bg-white">
-        <div className=" container flex items-center gap-4 ">
+        <div className=" container flex items-center gap-5 ">
           <div className="part1 w-[70%]">
             <HomeBannerV2/>
           </div>
@@ -93,7 +94,7 @@ const Home = () => {
             <p className="font-bold text-[25px]">- Only $200*</p>
           </div>
 
-          <AdsBannerSlider items={4} />
+          <AdsBannerSliderV2 items={4} />
         </div>
       </section>
 
@@ -151,7 +152,7 @@ const Home = () => {
         </div>
       </section>
 
-      <Footer />
+     
     </>
   );
 };
