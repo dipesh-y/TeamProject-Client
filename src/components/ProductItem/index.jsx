@@ -12,6 +12,7 @@ const ProductItem = () => {
         <div className='productItem rouneded-md shadow-lg overflow-hidden border-1 border-[rgba(0,0,0,0.1)] '>
             <div className='group imgWrapper w-[100%] h-[220px] overflow-hidden rounded-md relative'>
                 <Link to='/'>
+                
                     <div className='img h-[220px] overflow-hidden '>
                         <img src="https://serviceapi.spicezgold.com/download/1742462485033_siril-poly-silk-grey-off-white-color-saree-with-blouse-piece-product-images-rvcpwdyagl-0-202304220521.webp" className='w-full' />
                         <img src="https://serviceapi.spicezgold.com/download/1742462485037_siril-poly-silk-grey-off-white-color-saree-with-blouse-piece-product-images-rvcpwdyagl-2-202304220521.webp" className='w-full transition-all duraation-700 absolute top-0 left-0 opacity-0 group-hover:opacity-100 group-hover:scale-105' />

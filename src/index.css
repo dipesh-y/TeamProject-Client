@@ -19,6 +19,7 @@ body {
   font-optical-sizing: auto;
   background: #f6f0f0;
   overflow-x: hidden;
+  color: #666;
 }
 
 /* Scrollbar styling */
@@ -223,4 +224,36 @@ footer form input::placeholder {
 
 .Mui-selected.MuiPaginationItem-page{background: #ff5252 !important; color: #fff !important;}
 
+p{
+  font-size: 14px;
+  line-height: 25px;
+}
 
+.zoomProductSliderThumbs .swiper-wrapper {
+  padding-top: 38px !important;
+}
+.zoomProductSliderThumbs .swiper-button-next {
+  bottom:0px !important;
+  right: inherit !important;
+  top: inherit !important;
+  width: 100% !important;
+  height: 30px !important;
+  border: 0px !important;  
+}
+
+
+.zoomProductSliderThumbs .swiper-button-next:after {
+  transform: rotate(90deg);
+}
+
+.zoomProductSliderThumbs .swiper-button-prev {
+  top: 20px !important;  
+  left:0 !important;
+  width: 100% !important;
+  height: 30px !important;
+  border: 0px !important;  
+}
+
+.zoomProductSliderThumbs .swiper-button-prev:after {
+  transform: rotate(90deg);
+}
