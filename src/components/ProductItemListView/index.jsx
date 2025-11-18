@@ -34,17 +34,17 @@ const ProductItemListView = () => {
                     </Button>
                 </div>
             </div>
-            <div className='info !p-3 !py-5 !px-8 !w-[75%] '>
-                <h6 className='!text-[15px] '><Link to="/" className='link'>Tikhi Imli</Link></h6>
-                <h3 className='!text-[18px] !title !mt-3 !font-[500] !mb-3 !text-[#000]'>
+            <div className="info !p-3 !py-5 !px-8 !w-[75%] ">
+                <h6 className="!text-[15px] !font-[400]"><Link to="/" className='link'>Tikhi Imli</Link></h6>
+                <h3 className="!text-[18px] !title !mt-3 !font-[500] !mb-3 !text-[#000]">
                     <Link to="/" className='link transition-all'>Embellished Sequinned Ready to Wear Saree</Link></h3>
-                <p className='text-[14px] !mb-3'>Elegant Design: Premium women’s kurta set with pant and dupatta, perfect for festivals, weddings, parties, and daily wear.
+                <p className="text-[14px] !mb-3">Elegant Design: Premium women’s kurta set with pant and dupatta, perfect for festivals, weddings, parties, and daily wear.
 Comfortable Fabric: Made with soft and breathable fabric for all-day comfort – ideal for office, casual outings, or special occasions.</p>
                 <Rating name='size-small' defaultValue={4} size='small' readOnly></Rating>
 
-                <div className='flex items-center gap-4'>
-                    <span className='oldPrice line-through text-gray-500 text-[15px] font-[500]'>$58.00</span>
-                    <span className='price text-primary font-[600]'>$58.00</span>
+                <div className="flex items-center gap-4">
+                    <span className="oldPrice line-through text-gray-500 text-[15px] font-[500]">$58.00</span>
+                    <span className="price text-primary font-[600]">$58.00</span>
                 </div>
                 <div className='mt-3'>
                     <Button className='btn-org'><MdOutlineShoppingCart className='text-[20px]'/>Add to Cart</Button>
