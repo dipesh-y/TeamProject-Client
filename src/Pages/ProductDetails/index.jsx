@@ -85,9 +85,11 @@ export const ProductDetails = () => {
                             </div>
                         </div>
                         <p className="text-[14px] mt-5 mb-2 text-[#000]">Free Shipping (Est. Delivery Time 2-3 Days)</p>
-                        <div className="flexx items-center  gap-4" >
+                        <div className="flex items-center  gap-4" >
                            <div className="QtyBoxWrapper w-[70px]">
+                            
                             <QtyBox/>
+                            
                             </div> 
 
                                <Button className="btn-org flex gap-2">
@@ -153,16 +155,16 @@ export const ProductDetails = () => {
 
                     {
                         activeTab === 1 && 
-                        <div className="shadow-md w-full py-5 px-8  rounded-md">
+                        <div className="shadow-md w-full py-5 px-8  rounded-md mt-8 mb-10">
                         
 
 <div class="relative overflow-x-auto bg-neutral-primary-soft shadow-xs 
-rounded-base border border-default">
-    <table class="w-full text-sm text-left rtl:text-right  text-grey-500 dark:text-grey-400">
+rounded-base border border-default p-6 ">
+    <table class="w-full text-sm text-left rtl:text-right  text-grey-500 dark:text-grey-400 ">
         <thead class="text-sm text-body bg-neutral-secondary-soft border-b 
         rounded-base border-default">
             <tr>
-                <th scope="col" class="px-6 py-3">
+                <th scope="col" class="px-6 py-3 ">
                     Stand Up
                 </th>
                 <th scope="col" class="px-6 py-3">
@@ -179,32 +181,32 @@ rounded-base border border-default">
         </thead>
         <tbody>
             <tr class="bg-white border-b dark:bg-grey-800 dark:border-grey-700">
-                <td class="px-6 py-4 font-[500]">
+                <td class="px-8 py-5 font-[500] ">
                     35"L*24"W*37-45"H(front back to wheel)
                 </td>
                 
-                <td class="px-6 py-4 font-[500]">
+                <td class="px-8 py-5 font-[500]">
                     35"L*24"W*37-45"H(front back to wheel)
                 </td>
-                <td class="px-6 py-4 font-[500]">
+                <td class="px-8 py-5 font-[500]">
                     35"L*24"W*37-45"H(front back to wheel)
                 </td>
-                <td class="px-6 py-4 font-[500]">
+                <td class="px-8 py-5 font-[500]">
                     24
                 </td>
                 </tr>
                 <tr class="bg-white border-b dark:bg-grey-800 dark:border-grey-700">
-                <td class="px-6 py-4 font-[500]">
+                <td class="px-8 py-5 font-[500]">
                     35"L*24"W*37-45"H(front back to wheel)
                 </td>
                 
-                <td class="px-6 py-4 font-[500]">
+                <td class="px-8 py-5 font-[500]">
                     35"L*24"W*37-45"H(front back to wheel)
                 </td>
-                <td class="px-6 py-4 font-[500]">
+                <td class="px-8 py-5 font-[500]">
                     35"L*24"W*37-45"H(front back to wheel)
                 </td>
-                <td class="px-6 py-4 font-[500]">
+                <td class="px-8 py-5 font-[500]">
                     24
                 </td>
                 </tr>
