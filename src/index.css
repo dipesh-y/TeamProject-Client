@@ -1,11 +1,9 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
+@import  "tailwindcss";
 
-
+/* 
 /* Updated Tailwind CSS directives for v4 compatibility */
-@import "tailwindcss/preflight";
-@import "tailwindcss/utilities";
+/* @import "tailwindcss/preflight";
+@import "tailwindcss/utilities";  */
 
 
 /* Theme variable */

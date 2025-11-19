@@ -9,7 +9,7 @@ import { MdOutlineShoppingCart } from 'react-icons/md';
 import { FaRegHeart } from "react-icons/fa";
 import { IoGitCompareOutline } from "react-icons/io5";
 import TextField from '@mui/material/TextField';
-import ProductsSlider from '../../components/Productsslider'
+import ProductsSlider from '../../components/ProductsSlider'
 
 export const ProductDetails = () => {
 
