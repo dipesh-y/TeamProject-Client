@@ -274,3 +274,7 @@ input::-webkit-inner-spin-button {
 }
 .reviewScroll::-webkit-scrollbar{width: 5px !important;}
 .reviewScroll::-webkit-scrollbar-thumb{background: #ccc !important;}
+
+.productDetailsModal .MuiDialogContent-root{
+  padding: 0px !important;
+}
