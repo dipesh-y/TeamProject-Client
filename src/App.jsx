@@ -13,6 +13,9 @@ import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogContent from '@mui/material/DialogContent';
 import ProductDetailsComponent from './components/ProductDetails';
+import Login from './Pages/Login';
+import Register from './Pages/Register';
+
 
 export const MyContext = createContext();
 
@@ -40,6 +43,10 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/productListing" element={<ProductListing />} />
             <Route path="/product/:id" element={<ProductDetails />} />
+            <Route path="/login" exact={true} element={<Login />} />
+            <Route path="/register"  exact={true} element={<Register />} />
+
+
           </Routes>
 
           <Footer />
