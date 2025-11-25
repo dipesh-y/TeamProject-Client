@@ -17,6 +17,8 @@ import Login from './Pages/Login';
 import Register from './Pages/Register';
 
 
+
+
 export const MyContext = createContext();
 
 function App() {
@@ -25,12 +27,21 @@ function App() {
   const [fullWidth] = useState(true);
   const [maxWidth] = useState('lg');
 
+  const [openCartPanel, setOpenCartPanel] = React.useState(false);
+
   const handleCloseProductDetailsModal = () => {
     setOpenProductDetailsModal(false);
   };
 
+  const toggleCartPanel = (newOpen) => () => {
+    setOpenCartPanel(newOpen);
+  };
+
   const values = {
-    setOpenProductDetailsModal
+    setOpenProductDetailsModal,
+    setOpenCartPanel,
+    toggleCartPanel,
+    openCartPanel
   };
 
   return (
@@ -81,6 +92,8 @@ function App() {
           </div>
         </DialogContent>
       </Dialog>
+
+      
     </>
   );
 }
