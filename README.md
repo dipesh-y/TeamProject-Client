@@ -46,7 +46,7 @@ Frontend covers **Tutorials 1–19** from the YouTube playlist:
 |Pranjali | Developer |
 |Ashok | Developer |
 |Govind Kushwaha | Developer |
-
+|Anurag Tiwari| Developer|
 
 ---
 
