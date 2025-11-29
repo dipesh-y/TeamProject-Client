@@ -37,8 +37,8 @@ export const ProductZoom = () => {
                 className={`rounded-md overflow-hidden cursor-pointer border h-24
                   transition-all duration-300 
                   ${slideIndex === 0 ? "border-gray-600 opacity-100" : "border-transparent opacity-40"}
-                }
-                onClick={() => goto(0)`}
+                `}
+                onClick={() => goto(0)}
               >
                 <img
                   src="https://api.spicezgold.com/download/file_1734529362999_gosriki-women-s-pink-ethnic-motifs-printed-kurta-with-trouser-dupatta-product-images-rvpkyh5qdr-0-202310141511.webp"
@@ -52,8 +52,8 @@ export const ProductZoom = () => {
                 className={`rounded-md overflow-hidden cursor-pointer h-24
       transition-all duration-300 
       ${slideIndex === 1 ? "opacity-100" : "opacity-40"}
-    }
-                onClick={() => goto(1)`}
+    `}
+                onClick={() => goto(1)}
               >
                 <img
                   src="https://api.spicezgold.com/download/file_1734529363003_gosriki-women-s-pink-ethnic-motifs-printed-kurta-with-trouser-dupatta-product-images-rvpkyh5qdr-1-202310141511.jpg"
@@ -68,8 +68,8 @@ export const ProductZoom = () => {
                 className={`rounded-md overflow-hidden cursor-pointer border h-24
                   transition-all duration-300 
                   ${slideIndex === 2 ? "border-gray-600 opacity-100" : "border-transparent opacity-40"}
-                }
-                onClick={() => goto(2)`}
+                `}
+                onClick={() => goto(2)}
               >
                 <img
                   src="https://api.spicezgold.com/download/file_1734529363005_gosriki-women-s-pink-ethnic-motifs-printed-kurta-with-trouser-dupatta-product-images-rvpkyh5qdr-2-202310141511.jpg"
@@ -100,6 +100,7 @@ export const ProductZoom = () => {
                 src="https://api.spicezgold.com/download/file_1734529363003_gosriki-women-s-pink-ethnic-motifs-printed-kurta-with-trouser-dupatta-product-images-rvpkyh5qdr-1-202310141511.jpg"
               />
             </SwiperSlide>
+
             <SwiperSlide>
               <InnerImageZoom
                 zoomType="hover"
