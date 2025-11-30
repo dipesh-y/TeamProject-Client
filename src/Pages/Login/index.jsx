@@ -1,13 +1,27 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { IoMdEye, IoMdEyeOff } from "react-icons/io";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FcGoogle } from "react-icons/fc";
+import { MyContext } from '../../App';
 
 const Login = () => {
 
   const [isPasswordShow, setIsPasswordShow] = useState(false);
+  const [formFields, setFormsFields] = useState({
+    email:'',
+    password:''
+  });
+  const context = useContext(MyContext)
+  const histoty = useNavigate();
+
+  const forgotPassword = () => {
+      context.openAlertBox("success", "OTP Send");
+        histoty("/verify");
+    
+   
+  }
 
   return (
     <section className='section py-10'>
@@ -24,6 +38,7 @@ const Login = () => {
                 label="Email Id *" 
                 variant="outlined"  
                 className='w-full'
+                name="name"
               />
             </div>
 
@@ -34,6 +49,7 @@ const Login = () => {
                 variant="outlined"
                 type={isPasswordShow ? "text" : "password"}
                 className='w-full'
+                name="password"
               />
 
               <Button 
@@ -47,7 +63,7 @@ const Login = () => {
               </Button>
             </div>
 
-            <a className='link cursor-pointer text-[15px] font-[600]'> Forget Password?</a>
+            <a className='link cursor-pointer text-[15px] font-[600]' onClick={forgotPassword}> Forget Password?</a>
 
             <div className="flex items-center w-full mt-3 mb-3">
               <Button className='btn-org w-full btn-lg'>Login</Button>

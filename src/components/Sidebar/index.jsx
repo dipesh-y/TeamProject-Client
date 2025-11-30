@@ -8,6 +8,7 @@ import RangeSlider from 'react-range-slider-input';
 import 'react-range-slider-input/dist/style.css';
 import Rating from '@mui/material/Rating';
 
+
 import { FaAngleDown , FaAngleUp} from "react-icons/fa";
 import Button from "@mui/material/Button";
 

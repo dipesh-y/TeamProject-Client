@@ -78,6 +78,7 @@ export const ProductZoom = () => {
               </div>
             </SwiperSlide>
 
+
           </Swiper>
         </div>
 
@@ -108,6 +109,7 @@ export const ProductZoom = () => {
                 src="https://api.spicezgold.com/download/file_1734529363005_gosriki-women-s-pink-ethnic-motifs-printed-kurta-with-trouser-dupatta-product-images-rvpkyh5qdr-2-202310141511.jpg"
               />
             </SwiperSlide>
+            
 
           </Swiper>
         </div>
