@@ -42,18 +42,20 @@ h1, h2, h3, h4, h5, h6{font-weight: 600;}
 }
 
 .btn-org {
-  background-color: #ff5252 !important;
-  color: #fff !important;
-  font-weight: 500;
-  font-size: 16px;
-  padding: 7px 20px !important;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+  background-color: #ff5252 !important; color: #fff !important; font-weight: 500; font-size: 16px;
+  padding: 7px 20px !important; border: none; border-radius: 4px; cursor: pointer;}
 .btn-org:hover{background-color: #282828 !important;}
 
+.btn-org.btn-border {
+  background: none !important; color: #ff5252 !important; border: 1px; 
+  solid: #ff5252 !important; font-weight: 500; font-size: 16px;
+  padding: 7px 20px !important; }
+   
+.btn-org.btn-border:hover{background: #171717 !important; color: #fff  !important; 
+  border: 2px;  solid: #171717 !important; }
+
 .btn-lg{font-size: 18px; padding: 10px 20px !important;}
+.btn-sm{font-size: 12px !important; padding: 5px 20px !important;}
 
 .link:hover {
   color: #ff5252;
@@ -306,3 +308,9 @@ input::-webkit-inner-spin-button {
   height: 90vh;
   display: flex;
 }
+#account-menu .MuiPaper-root{width: 200px !important}
+ .myAccountTabs li a{position: relative; display: block; }
+ .myAccountTabs li a:before{content: ''; width: 3px; height: 50%; position: absolute; 
+top: 50px; left: 0px; background: #ff5252; transition: all 0.3s ease-in-out; opacity: 0;}
+.myAccountTabs li a.active::before{height: 100%; opacity:1; top: 0px}
+.myAccountTabs li a.active button svg{color: #ff5252 !important; opacity: 1 !important;}
