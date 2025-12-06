@@ -8,8 +8,6 @@ import { Link } from "react-router-dom";
 
 import CategoryCollapse from "../../CategoryCollapse";
 
-
-
 const CategoryPanel = (props) => {
   const [submenuIndex, setSubmenuIndex] = useState(null);
   const [innerSubmenuIndex, setInnerSubmenuIndex] = useState(null);
@@ -18,16 +16,17 @@ const CategoryPanel = (props) => {
     props.setIsOpenCatPanel(newOpen);
   };
 
-
   const DrawerList = (
     <Box sx={{ width: 250 }} role="presentation" className="CategoryPanel">
       <div className="p-3">
-         <Link to="/" className="flex justify-center">
-            <img src="https://serviceapi.spicezgold.com/download/1750047766437_logo.jpg" alt="Logo"
-                  className="w-[170px]"/>
-         </Link>
-
-                </div>
+        <Link to="/" className="flex justify-center">
+          <img
+            src="https://serviceapi.spicezgold.com/download/1750047766437_logo.jpg"
+            alt="Logo"
+            className="w-[170px]"
+          />
+        </Link>
+      </div>
       <h3 className="p-3 text-[18px] font-[500] flex items-center justify-between px-3">
         Shop By Categories
         <IoCloseSharp
@@ -35,7 +34,7 @@ const CategoryPanel = (props) => {
           className="cursor-pointer text-[20px]"
         />
       </h3>
-      <CategoryCollapse/>
+      <CategoryCollapse />
     </Box>
   );
 

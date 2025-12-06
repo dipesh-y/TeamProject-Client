@@ -5,9 +5,9 @@ import { FiMinusSquare } from "react-icons/fi";
 import { FaRegPlusSquare } from "react-icons/fa";
 
 function CategoryCollapse() {
-    const [submenuIndex, setSubmenuIndex] = useState(null);
-    const [innerSubmenuIndex, setInnerSubmenuIndex] = useState(null);
-      const openSubmenu = (index) => {
+  const [submenuIndex, setSubmenuIndex] = useState(null);
+  const [innerSubmenuIndex, setInnerSubmenuIndex] = useState(null);
+  const openSubmenu = (index) => {
     setSubmenuIndex(submenuIndex === index ? null : index);
     setInnerSubmenuIndex(null);
   };
@@ -16,10 +16,9 @@ function CategoryCollapse() {
     setInnerSubmenuIndex(innerSubmenuIndex === index ? null : index);
   };
 
-    
   return (
     <>
-        <div className="scroll">
+      <div className="scroll">
         <ul className="w-full">
           {/* Fashion */}
           <li className="list-none flex items-center relative flex-col level-1 pl-0">
@@ -62,7 +61,10 @@ function CategoryCollapse() {
                   {innerSubmenuIndex === 0 && (
                     <ul className="inner_submenu w-full">
                       <li className="list-none relative mb-1 level-3 pl-6">
-                        <Link to="/" className="link w-full !text-left justify-start !px-3 transition text-[14px]">
+                        <Link
+                          to="/"
+                          className="link w-full !text-left justify-start !px-3 transition text-[14px]"
+                        >
                           Sarees
                         </Link>
                       </li>
@@ -90,12 +92,18 @@ function CategoryCollapse() {
                   {innerSubmenuIndex === 1 && (
                     <ul className="inner_submenu w-full">
                       <li className="list-none relative mb-1 level-3 pl-6">
-                        <Link to="/" className="link w-full !text-left justify-start !px-3 transition text-[14px]">
+                        <Link
+                          to="/"
+                          className="link w-full !text-left justify-start !px-3 transition text-[14px]"
+                        >
                           Kurtas & Suits
                         </Link>
                       </li>
                       <li className="list-none relative mb-1 level-3 pl-6">
-                        <Link to="/" className="link w-full !text-left justify-start !px-3 transition text-[14px]">
+                        <Link
+                          to="/"
+                          className="link w-full !text-left justify-start !px-3 transition text-[14px]"
+                        >
                           Tops
                         </Link>
                       </li>
@@ -154,17 +162,26 @@ function CategoryCollapse() {
                   {innerSubmenuIndex === 0 && (
                     <ul className="inner_submenu w-full">
                       <li className="list-none relative mb-1 level-3 pl-6">
-                        <Link to="/" className="link w-full !text-left justify-start !px-3 transition text-[14px]">
+                        <Link
+                          to="/"
+                          className="link w-full !text-left justify-start !px-3 transition text-[14px]"
+                        >
                           OnePlus
                         </Link>
                       </li>
                       <li className="list-none relative mb-1 level-3 pl-6">
-                        <Link to="/" className="link w-full !text-left justify-start !px-3 transition text-[14px]">
+                        <Link
+                          to="/"
+                          className="link w-full !text-left justify-start !px-3 transition text-[14px]"
+                        >
                           OPPO
                         </Link>
                       </li>
                       <li className="list-none relative mb-1 level-3 pl-6">
-                        <Link to="/" className="link w-full !text-left justify-start !px-3 transition text-[14px]">
+                        <Link
+                          to="/"
+                          className="link w-full !text-left justify-start !px-3 transition text-[14px]"
+                        >
                           Vivo
                         </Link>
                       </li>
@@ -262,8 +279,7 @@ function CategoryCollapse() {
         </ul>
       </div>
     </>
-    
-  )
+  );
 }
 
-export default CategoryCollapse
+export default CategoryCollapse;

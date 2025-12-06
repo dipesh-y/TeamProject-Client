@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-import Button from '@mui/material/Button';
+import React, { useState } from "react";
+import Button from "@mui/material/Button";
 import { FaAngleUp, FaAngleDown } from "react-icons/fa6";
-
 
 export const QtyBox = () => {
   const [qtyVal, setQtyVal] = useState(1);
@@ -11,7 +10,7 @@ export const QtyBox = () => {
   };
 
   const minusQty = () => {
-    setQtyVal(prev => (prev > 1 ? prev - 1 : 1));
+    setQtyVal((prev) => (prev > 1 ? prev - 1 : 1));
   };
 
   return (
@@ -28,11 +27,14 @@ export const QtyBox = () => {
         }}
       />
 
-      <div className="flex items-center flex-col justify-between h-[40px] 
-      absolute top-0 right-0 z-50">
+      <div
+        className="flex items-center flex-col justify-between h-[40px] 
+      absolute top-0 right-0 z-50"
+      >
         <Button
           className="!min-w-[25px] !w-[25px] !h-[20px] !text-[#000] !rounded-none
-          hover:bg-[#f1f1f1]"onClick={plusQty}
+          hover:bg-[#f1f1f1]"
+          onClick={plusQty}
         >
           <FaAngleUp className="text-[12px] opacity-55" />
         </Button>
@@ -44,8 +46,6 @@ export const QtyBox = () => {
           <FaAngleDown className="text-[12px] opacity-55" />
         </Button>
       </div>
-
-      
     </div>
   );
 };

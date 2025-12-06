@@ -50,7 +50,7 @@ export const ProductDetails = () => {
             <ProductZoom />
           </div>
           <div className="productContent w-[60%]">
-            < ProductDetailsComponent />
+            <ProductDetailsComponent />
           </div>
         </div>
 
@@ -61,7 +61,8 @@ export const ProductDetails = () => {
               onClick={() => setActiveTab(0)}
             >
               Description
-            </span><div></div>
+            </span>
+            <div></div>
             <span
               className="link text-[17px] cursor-pointer font-[500] ${active===1 && `text-primary`}"
               onClick={() => setActiveTab(1)}

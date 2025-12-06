@@ -19,7 +19,7 @@ import MenuItem from "@mui/material/MenuItem";
 
 import { IoBagCheckOutline } from "react-icons/io5";
 import { IoMdHeartEmpty } from "react-icons/io";
-import { IoIosLogOut } from "react-icons/io"
+import { IoIosLogOut } from "react-icons/io";
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
@@ -136,7 +136,6 @@ const Header = () => {
                   <Menu
                     anchorEl={anchorEl}
                     id="account-menu"
-                    
                     open={open}
                     onClose={handleClose}
                     onClick={handleClose}
@@ -145,8 +144,7 @@ const Header = () => {
                         elevation: 0,
                         sx: {
                           overflow: "visible",
-                          filter:
-                            "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
+                          filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
                           mt: 1.5,
                           "&::before": {
                             content: '""',
@@ -157,8 +155,7 @@ const Header = () => {
                             width: 10,
                             height: 10,
                             bgcolor: "background.paper",
-                            transform:
-                              "translateY(-50%) rotate(45deg)",
+                            transform: "translateY(-50%) rotate(45deg)",
                             zIndex: 0,
                           },
                         },
@@ -168,24 +165,40 @@ const Header = () => {
                     anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
                   >
                     <Link to="/my-account" className="w-full block">
-                    <MenuItem onClick={handleClose} className="flex gap-2 !py-2">
-                      <FaRegUser /> <span className="text-[18px]"> My account</span>
-                    </MenuItem> </Link>
+                      <MenuItem
+                        onClick={handleClose}
+                        className="flex gap-2 !py-2"
+                      >
+                        <FaRegUser />{" "}
+                        <span className="text-[18px]"> My account</span>
+                      </MenuItem>{" "}
+                    </Link>
                     <Link to="/my-orders" className="w-full block">
-                    <MenuItem onClick={handleClose} className="flex gap-2 !py-2">
-                      <IoBagCheckOutline /> <span className="text-[18px]"> Orders</span>
-                    </MenuItem >
+                      <MenuItem
+                        onClick={handleClose}
+                        className="flex gap-2 !py-2"
+                      >
+                        <IoBagCheckOutline />{" "}
+                        <span className="text-[18px]"> Orders</span>
+                      </MenuItem>
                     </Link>
                     <Link to="/my-list" className="w-full block">
-                    <MenuItem onClick={handleClose} className="flex gap-2 !py-2">
-                      <IoMdHeartEmpty /> <span className="text-[18px]"> My List</span>
-                    </MenuItem>
+                      <MenuItem
+                        onClick={handleClose}
+                        className="flex gap-2 !py-2"
+                      >
+                        <IoMdHeartEmpty />{" "}
+                        <span className="text-[18px]"> My List</span>
+                      </MenuItem>
                     </Link>
-                    
-                    <MenuItem onClick={handleClose} className="flex gap-2 !py-2">
-                      <IoIosLogOut  /> <span className="text-[18px]"> Logout</span>
+
+                    <MenuItem
+                      onClick={handleClose}
+                      className="flex gap-2 !py-2"
+                    >
+                      <IoIosLogOut />{" "}
+                      <span className="text-[18px]"> Logout</span>
                     </MenuItem>
-                    
                   </Menu>
                 </>
               )}

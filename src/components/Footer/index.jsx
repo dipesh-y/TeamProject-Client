@@ -15,13 +15,12 @@ import { FaPinterestP } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 
-import Drawer from '@mui/material/Drawer';
+import Drawer from "@mui/material/Drawer";
 import { IoCloseSharp } from "react-icons/io5";
-import CartPanel from '../CartPanel';
-import {MyContext} from "../../App";
+import CartPanel from "../CartPanel";
+import { MyContext } from "../../App";
 
 const Footer = () => {
-
   const context = useContext(MyContext);
 
   return (
@@ -254,21 +253,20 @@ const Footer = () => {
         </div>
       </div>
 
-
-
-
-      <Drawer open={context.openCartPanel} 
-      onClose={context.toggleCartPanel(false) } 
-      anchor={"right"}
-      className="cartPanel "
+      <Drawer
+        open={context.openCartPanel}
+        onClose={context.toggleCartPanel(false)}
+        anchor={"right"}
+        className="cartPanel "
       >
-          <div className="flex items-center justify-between py-3 px-4 gap-3 border-b border-[rgba(0,0,0,0.1)] overflow-hidden">
+        <div className="flex items-center justify-between py-3 px-4 gap-3 border-b border-[rgba(0,0,0,0.1)] overflow-hidden">
           <h4>Shopping cart(1)</h4>
-            <IoCloseSharp className="text-[20px] cursor-pointer" onClick={context.toggleCartPanel(false)}/>
-          </div>
-          <CartPanel/>
-
-          
+          <IoCloseSharp
+            className="text-[20px] cursor-pointer"
+            onClick={context.toggleCartPanel(false)}
+          />
+        </div>
+        <CartPanel />
       </Drawer>
     </>
   );

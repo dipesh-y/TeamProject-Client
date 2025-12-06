@@ -1,4 +1,4 @@
-import React ,{ useContext } from "react";
+import React, { useContext } from "react";
 import "../ProductItem/style.css";
 import { Link } from "react-router-dom";
 import Rating from "@mui/material/Rating";
@@ -31,7 +31,10 @@ const ProductItemListView = () => {
           10%
         </span>
         <div className="actions absolute top-[-200px] right-[5px] z-50 flex items-center gap-2 flex-col w-[50px] transition-all dyration-300 group-hover:top-[15px] opacity-0 group-hover:opacity-100">
-          <Button className="!w-[35px] !h-[35px] !min-w-[40px] !rounded-full !bg-white text-black hover:!bg-primary hover:text-black " onClick={() => context.setOpenProductDetailsModal(true)}>
+          <Button
+            className="!w-[35px] !h-[35px] !min-w-[40px] !rounded-full !bg-white text-black hover:!bg-primary hover:text-black "
+            onClick={() => context.setOpenProductDetailsModal(true)}
+          >
             <MdZoomOutMap className="text-[18px] !text-black group-hover:text-white hover:!text-white" />
           </Button>
 

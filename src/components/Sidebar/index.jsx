@@ -4,30 +4,27 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 import "../Sidebar/style.css";
 import { Collapse } from "react-collapse";
-import RangeSlider from 'react-range-slider-input';
-import 'react-range-slider-input/dist/style.css';
-import Rating from '@mui/material/Rating';
+import RangeSlider from "react-range-slider-input";
+import "react-range-slider-input/dist/style.css";
+import Rating from "@mui/material/Rating";
 
-
-import { FaAngleDown , FaAngleUp} from "react-icons/fa";
+import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import Button from "@mui/material/Button";
 
 const Sidebar = () => {
-  const [isOpenCategoryFilter, setisOpenCategoryFilter ]=useState(true);
-  const [isOpenAvailFilter, setisOpenAvailFilter ]=useState(true);
-  const [isOpenSizeFilter, setisOpenSizeFilter ]=useState(true);
+  const [isOpenCategoryFilter, setisOpenCategoryFilter] = useState(true);
+  const [isOpenAvailFilter, setisOpenAvailFilter] = useState(true);
+  const [isOpenSizeFilter, setisOpenSizeFilter] = useState(true);
   return (
     <aside className="sidebar py-5">
       <div className="box">
         <h3 className="w-full mb-3 text-[16px] font-[600] flex items-center pr-5">
           SHOP BY CATEGORY
-          <Button className="!w-30px] !h-[30px] !min-w-[30px] !rounded-full !ml-auto !text-[#000]"
-          onClick={()=>setisOpenCategoryFilter(!isOpenCategoryFilter)}>
-            {
-              isOpenCategoryFilter===true?<FaAngleUp/>:<FaAngleDown />
-            }
-           
-            
+          <Button
+            className="!w-30px] !h-[30px] !min-w-[30px] !rounded-full !ml-auto !text-[#000]"
+            onClick={() => setisOpenCategoryFilter(!isOpenCategoryFilter)}
+          >
+            {isOpenCategoryFilter === true ? <FaAngleUp /> : <FaAngleDown />}
           </Button>
         </h3>
         <Collapse isOpened={isOpenCategoryFilter}>
@@ -76,16 +73,14 @@ const Sidebar = () => {
         </Collapse>
       </div>
 
-       <div className="box mt-3">
+      <div className="box mt-3">
         <h3 className="w-full mb-3 text-[16px] font-[600] flex items-center pr-5">
           AVAILABILITY
-          <Button className="!w-30px] !h-[30px] !min-w-[30px] !rounded-full !ml-auto !text-[#000]"
-          onClick={()=>setisOpenAvailFilter(!isOpenAvailFilter)}>
-            {
-              isOpenAvailFilter===true?<FaAngleUp/>:<FaAngleDown />
-            }
-           
-            
+          <Button
+            className="!w-30px] !h-[30px] !min-w-[30px] !rounded-full !ml-auto !text-[#000]"
+            onClick={() => setisOpenAvailFilter(!isOpenAvailFilter)}
+          >
+            {isOpenAvailFilter === true ? <FaAngleUp /> : <FaAngleDown />}
           </Button>
         </h3>
         <Collapse isOpened={isOpenAvailFilter}>
@@ -105,21 +100,18 @@ const Sidebar = () => {
               label="Not Available (17)"
               className="w-full"
             />
-            
           </div>
         </Collapse>
       </div>
 
-       <div className="box mt-3">
+      <div className="box mt-3">
         <h3 className="w-full mb-3 text-[16px] font-[600] flex items-center pr-5">
           SIZE
-          <Button className="!w-30px] !h-[30px] !min-w-[30px] !rounded-full !ml-auto !text-[#000]"
-          onClick={()=>setisOpenSizeFilter(!isOpenSizeFilter)}>
-            {
-              isOpenSizeFilter===true?<FaAngleUp/>:<FaAngleDown />
-            }
-           
-            
+          <Button
+            className="!w-30px] !h-[30px] !min-w-[30px] !rounded-full !ml-auto !text-[#000]"
+            onClick={() => setisOpenSizeFilter(!isOpenSizeFilter)}
+          >
+            {isOpenSizeFilter === true ? <FaAngleUp /> : <FaAngleDown />}
           </Button>
         </h3>
         <Collapse isOpened={isOpenSizeFilter}>
@@ -149,7 +141,6 @@ const Sidebar = () => {
               label="XXL (17)"
               className="w-full"
             />
-            
           </div>
         </Collapse>
       </div>
@@ -157,10 +148,9 @@ const Sidebar = () => {
       <div className="box mt-4 ">
         <h3 className="w-full !mb-4 text-[16px] font-[600] flex items-center pr-5">
           FILTER BY PRIZE
-          
         </h3>
 
-        <RangeSlider/>
+        <RangeSlider />
         <div className="flex !pt-4 !pb-2 priceRange">
           <span className="text-[13px]">
             From: <strong className="!text-dark"> Rs:{100}</strong>
@@ -168,38 +158,29 @@ const Sidebar = () => {
           <span className="ml-auto text-[13px]">
             From: <strong className="!text-dark"> Rs:{5000}</strong>
           </span>
-          
-
         </div>
       </div>
 
       <div className="box mt-4 ">
         <h3 className="w-full !mb-4 text-[16px] font-[600] flex items-center pr-5">
           FILTER BY RATING
-          
         </h3>
 
-        
-        
-        
         <div className="w-full">
-          <Rating name='size-small' defaultValue={5} size='small' readOnly />
+          <Rating name="size-small" defaultValue={5} size="small" readOnly />
         </div>
         <div className="w-full">
-          <Rating name='size-small' defaultValue={4} size='small' readOnly />
+          <Rating name="size-small" defaultValue={4} size="small" readOnly />
         </div>
         <div className="w-full">
-          <Rating name='size-small' defaultValue={3} size='small' readOnly />
+          <Rating name="size-small" defaultValue={3} size="small" readOnly />
         </div>
         <div className="w-full">
-          <Rating name='size-small' defaultValue={2} size='small' readOnly />
+          <Rating name="size-small" defaultValue={2} size="small" readOnly />
         </div>
         <div className="w-full">
-          <Rating name='size-small' defaultValue={1} size='small' readOnly />
+          <Rating name="size-small" defaultValue={1} size="small" readOnly />
         </div>
-
-
-       
       </div>
     </aside>
   );

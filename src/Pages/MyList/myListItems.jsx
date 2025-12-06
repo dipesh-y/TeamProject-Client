@@ -6,10 +6,7 @@ import { IoCloseSharp } from "react-icons/io5";
 import Rating from "@mui/material/Rating";
 import Button from "@mui/material/Button";
 
-
 const MyListItems = (props) => {
-  
-
   return (
     <div className="cartItem w-full p-3 flex items-center gap-4 pb-5 border-b border-[rgba(0,0,0,0.1)]">
       <div className="img w-[15%] rounded-md overflow-hidden">
@@ -30,8 +27,6 @@ const MyListItems = (props) => {
         </h3>
         <Rating name="size-small" defaultValue={4} size="small" readOnly />
 
-       
-
         <div className="flex items-center gap-4 mt-2 mb-2">
           <span className="price text text-[14px] font-[600]">$58.00</span>
           <span className="oldPrice line-through text-gray-500 text-[14px] font-[500]">
@@ -41,8 +36,6 @@ const MyListItems = (props) => {
             55% OFF
           </span>
         </div>
-
-       
 
         <Button className="btn-org btn-sm">Add to Cart</Button>
       </div>
